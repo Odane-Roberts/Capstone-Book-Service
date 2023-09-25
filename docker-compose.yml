@@ -1,0 +1,11 @@
+  book-service:
+    build:
+      context: ./book-service
+      dockerfile: Dockerfile
+    ports:
+      - "8090:8090"
+    networks:
+      - my_network
+networks:
+  my_network:
+    driver: bridge
