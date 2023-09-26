@@ -1,3 +1,4 @@
+services:
   book-service:
     build:
       context: ./book-service
